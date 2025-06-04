@@ -1,0 +1,28 @@
+{
+  "name": "agency-template",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@tailwindcss/postcss": "^4.1.8",
+    "@tailwindcss/vite": "^4.1.8",
+    "astro": "^5.8.1",
+    "tailwindcss": "^4.1.8",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "prettier": "^3.5.3",
+    "prettier-plugin-astro": "^0.14.1",
+    "prettier-plugin-tailwindcss": "^0.6.12"
+  },
+  "volta": {
+    "node": "20.11.0"
+  }
+}

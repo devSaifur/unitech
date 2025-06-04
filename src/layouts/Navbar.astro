@@ -1,0 +1,144 @@
+---
+import Container from '../components/shared/Container.astro'
+import Navitem from '../components/shared/Navitem.astro'
+import BtnLink from '../components/shared/BtnLink.astro'
+import Logo from '../assets/logos/logo-low.png'
+import { Image } from 'astro:assets'
+
+const navItems = [
+  {
+    href: '#',
+    text: 'Home'
+  },
+  {
+    href: '#solutions',
+    text: 'Solutions'
+  },
+  {
+    href: '#services',
+    text: 'Services'
+  },
+  {
+    href: '#features',
+    text: 'Features'
+  },
+  {
+    href: '#faq',
+    text: 'About us'
+  }
+]
+---
+
+<header class="absolute inset-x-0 top-0 z-50 py-6">
+  <Container>
+    <nav class="relative flex w-full justify-between gap-6">
+      <!-- logo -->
+      <div class="relative inline-flex min-w-max">
+        <a href="/" class="relative flex items-center gap-3">
+          <div
+            class="relative flex w-20 overflow-hidden rounded-xl dark:bg-black/90"
+          >
+            <Image
+              src={Logo}
+              alt="Unitech Builder Logo"
+              class="h-full w-full object-cover"
+            />
+          </div>
+          <div class="text-heading-1 inline-flex text-lg font-semibold">
+            Unitech Builder
+          </div>
+        </a>
+      </div>
+
+      <div
+        data-nav-overlay
+        aria-hidden="true"
+        class="bg-box-bg bg-opacity-50 fixed inset-0 hidden backdrop-blur-xl backdrop-filter lg:!hidden"
+      >
+      </div>
+      <div
+        data-navbar
+        class="bg-body border-x-box-border absolute top-full flex h-0 w-full flex-col gap-x-4 gap-y-6 overflow-hidden border-x duration-300 ease-linear lg:relative lg:top-0 lg:!h-auto lg:scale-y-100 lg:flex-row lg:items-center lg:justify-between lg:border-x-0 lg:bg-transparent"
+      >
+        <ul
+          class="border-box-border text-heading-2 flex w-full flex-col gap-x-8 gap-y-4 border-t px-6 pt-6 text-lg lg:flex-row lg:items-center lg:justify-center lg:border-t-0 lg:px-0 lg:pt-0"
+        >
+          {
+            navItems.map((item) => {
+              return <Navitem {...item} />
+            })
+          }
+        </ul>
+
+        <div
+          class="border-box-bg flex w-full items-center border-b px-6 pb-6 sm:w-max lg:min-w-max lg:border-0 lg:px-0 lg:pb-0"
+        >
+          <BtnLink
+            text="Get Started"
+            href="#cta"
+            className="flex w-full justify-center sm:w-max"
+            variant="primary"
+          />
+        </div>
+      </div>
+
+      <div class="flex min-w-max items-center gap-x-3">
+        <button
+          data-switch-theme
+          class="text-heading-2 border-box-border relative flex rounded-full border p-2 outline-none hover:bg-slate-200 lg:p-3 dark:hover:bg-slate-800"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="hidden h-6 w-6 dark:flex"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+            ></path>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="h-6 w-6 dark:hidden"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+            ></path>
+          </svg>
+
+          <span class="sr-only">switch theme</span>
+        </button>
+
+        <button
+          data-toggle-nav
+          data-open-nav="false"
+          class="relative flex h-auto w-7 flex-col outline-none lg:invisible lg:hidden"
+        >
+          <span
+            id="line1"
+            class="bg-heading-2 h-0.5 w-6 rounded-full transition-all duration-300 ease-linear"
+          ></span>
+          <span
+            id="line2"
+            class="rounded-ful bg-heading-2 mt-1 h-0.5 w-6 origin-center transition-all duration-300 ease-linear"
+          ></span>
+          <span
+            id="line3"
+            class="rounded-ful bg-heading-2 mt-1 h-0.5 w-6 transition-all duration-300 ease-linear"
+          ></span>
+          <span class="sr-only">togglenav</span>
+        </button>
+      </div>
+    </nav>
+  </Container>
+</header>
