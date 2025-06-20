@@ -8,8 +8,6 @@ export default defineConfig({
 
   base: '',
 
-  output: 'server',
-
   vite: {
     plugins: [tailwindcss()]
   }
