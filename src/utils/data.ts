@@ -2,6 +2,9 @@ import visibilityDilemma from '../assets/images/visibility-dilemma.jpg'
 import engagementGap from '../assets/images/engagement-gap.jpg'
 import resultsInHibernation from '../assets/images/results-in-hibernation.jpg'
 
+import plumbing from '../assets/images/plumb.avif'
+import arborists from '../assets/images/arborists.avif'
+
 const services = [
   {
     title: 'Dependable Local Expertise',
@@ -68,7 +71,7 @@ const solutions = [
       "That's why we offer comprehensive plumbing services, backed by a commitment to quality and responsive customer care. Our expert team is dedicated to resolving your plumbing needs promptly and effectively, safeguarding your investment and providing you with peace of mind.",
     solution:
       'Choose Unitech Builder for a partnership built on reliability and excellence.',
-    img: visibilityDilemma
+    img: plumbing
   },
   {
     title: 'Tree Services by Trusted Arborists',
@@ -78,16 +81,96 @@ const solutions = [
       'Our team of certified arborists delivers expert tree management solutions, including precision pruning, safe tree removal, and responsive emergency services.',
     solution:
       'We utilize state-of-the-art equipment and advanced techniques to promote the long-term health and vitality of your trees.',
-    img: engagementGap
+    img: arborists
   },
   {
-    title: 'Transforming Designs into Reality',
+    title: 'Lawn Care and Maintenance Services',
     painPoint:
-      "Unitech Builder's team of skilled craftsmen delivers precision and excellence to every construction endeavor. ",
+      "Unitech Builder delivers professional lawn care and maintenance services designed to elevate your property's aesthetic appeal.",
     agitatepainPoint:
-      'We provide reliable construction services for projects of all scales, from intricate installations to extensive structural undertakings, consistently transforming conceptual plans into tangible realities.',
+      'Our expert team provides a comprehensive suite of services, including precision mowing, detailed edging, targeted fertilization, and effective weed control.',
+    solution:
+      'We are committed to fostering healthy, vibrant lawns through the application of environmentally friendly products and sustainable techniques.',
+    img: resultsInHibernation
+  },
+  {
+    title: 'Interior Design and Renovation',
+    painPoint:
+      "Unitech Builder's interior design and renovation services are tailored to meet your unique needs and style preferences.",
+    agitatepainPoint:
+      'Our team of experts works closely with you to create a space that reflects your personality and lifestyle.',
+    solution:
+      'From concept to completion, we handle every aspect of the project with precision and care, ensuring a beautiful and functional result.',
+    img: resultsInHibernation
+  },
+  {
+    title: 'Fixing & Support',
+    painPoint:
+      'Our team of skilled professionals provides reliable fixing and support services to address a wide range of issues in your home or business.',
+    agitatepainPoint:
+      'From minor repairs to major renovations, we have the expertise and tools to get the job done right.',
+    solution:
+      'We offer prompt and efficient service to ensure your property is safe and functional.',
+    img: resultsInHibernation
+  },
+  {
+    title: 'Roofing Services',
+    painPoint:
+      'Unitech Builder offers top-tier roofing services that are designed to protect your property from the elements.',
+    agitatepainPoint:
+      'Our team of certified roofers and installers provides efficient and cost-effective solutions to keep your roof looking its best.',
     solution:
       'Committed to the highest standards of safety and workmanship, we meticulously utilize top-tier tools and materials sourced from our comprehensive inventory.',
+    img: resultsInHibernation
+  },
+  {
+    title: 'HVAC Services',
+    painPoint:
+      'We offer Heating, Ventilation, and Air Conditioning (HVAC) services to keep your home or business comfortable and energy-efficient.',
+    agitatepainPoint:
+      'Our experienced technicians install and maintain HVAC systems, ensuring a comfortable and healthy environment for your occupants.',
+    solution:
+      'We provide regular maintenance and emergency repair services to keep your HVAC system running smoothly year-round.',
+    img: resultsInHibernation
+  },
+  {
+    title: 'Electrical Services',
+    painPoint:
+      'Out top grade electrical expertise are ready to serve you with all your needs.',
+    agitatepainPoint:
+      'We have a team of experienced electricians who are ready to provide you with the best services for your electrical needs.',
+    solution:
+      'Our team is dedicated to providing you with the best service possible, ensuring that your electrical systems are safe and efficient.',
+    img: resultsInHibernation
+  },
+  {
+    title: 'Appliances Services',
+    painPoint:
+      'We offer offers top-tier appliances services, Our team of experts are ready to provide you with the best services for your appliances needs, from installation to repair.',
+    agitatepainPoint:
+      'Our team of experts are ready to provide you with the best services for your appliances needs, from installation to repair.',
+    solution:
+      'We are dedicated to providing you with the best service possible, ensuring that your appliances are running smoothly and efficiently.',
+    img: resultsInHibernation
+  },
+  {
+    title: 'Siding Services',
+    painPoint:
+      'Unitech Builder offers professional siding services to enhance the exterior of your property.',
+    agitatepainPoint:
+      'Our team of skilled professionals provides high-quality siding installation and repair services to protect your home from the elements.',
+    solution:
+      'We use durable materials and advanced techniques to ensure your siding is both functional and aesthetically pleasing.',
+    img: resultsInHibernation
+  },
+  {
+    title: 'Drywall Services',
+    painPoint:
+      'Unitech Builder offers top-tier drywall services, Our team of experts are ready to provide you with the best services for your drywall needs, from installation to repair.',
+    agitatepainPoint:
+      'Our team of experts are ready to provide you with the best services for your drywall needs, from installation to repair.',
+    solution:
+      'We are dedicated to providing you with the best service possible, ensuring that your drywall is installed and repaired to the highest standards.',
     img: resultsInHibernation
   }
 ]
