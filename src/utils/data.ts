@@ -1,5 +1,3 @@
-import visibilityDilemma from '../assets/images/visibility-dilemma.jpg'
-import engagementGap from '../assets/images/engagement-gap.jpg'
 import resultsInHibernation from '../assets/images/results-in-hibernation.jpg'
 
 import plumbing from '../assets/images/plumb.avif'
