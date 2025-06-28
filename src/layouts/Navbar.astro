@@ -2,7 +2,8 @@
 import Container from '../components/shared/Container.astro'
 import Navitem from '../components/shared/Navitem.astro'
 import BtnLink from '../components/shared/BtnLink.astro'
-import Logo from '../assets/logos/logo-low.png'
+import Logo from '../assets/logos/logo.avif'
+import LogoDark from '../assets/logos/logo-dark.avif'
 import { Image } from 'astro:assets'
 
 const navItems = [
@@ -37,7 +38,12 @@ const navItems = [
             <Image
               src={Logo}
               alt="Unitech Builder Logo"
-              class="h-full w-full object-cover"
+              class="h-full w-full object-cover dark:hidden"
+            />
+            <Image
+              src={LogoDark}
+              alt="Unitech Builder Logo"
+              class="hidden h-full w-full object-cover dark:inline-flex"
             />
           </div>
           <div class="text-heading-1 inline-flex text-lg font-semibold">
