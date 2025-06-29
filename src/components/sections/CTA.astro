@@ -35,7 +35,12 @@ const { className } = Astro.props
               <p>Fill out the form below and we'll get back to you soon.</p>
             </div>
             <div class="p-6 pt-0">
-              <form class="space-y-4">
+              <form
+                action="api/contact"
+                id="contactForm"
+                method="POST"
+                class="space-y-4"
+              >
                 <div class="space-y-4">
                   <label for="name" class="text-sm font-medium">Name</label>
                   <input
@@ -98,3 +103,62 @@ const { className } = Astro.props
     </div>
   </Container>
 </section>
+
+<script>
+  import Toastify from 'toastify-js'
+  import 'toastify-js/src/toastify.css'
+
+  const form = document.getElementById('contactForm') as HTMLFormElement
+  const submitBtn = form.querySelector(
+    'button[type="submit"]'
+  ) as HTMLButtonElement
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault()
+    const formData = new FormData(form)
+
+    console.log('Form submitted:', Object.fromEntries(formData.entries()))
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        body: formData
+      })
+
+      submitBtn.disabled = true
+
+      if (!response.ok) {
+        Toastify({
+          text: 'Failed to send message',
+          duration: 5000,
+          close: true,
+          gravity: 'top',
+          position: 'center',
+          style: {
+            background: '#cf3030'
+          }
+        }).showToast()
+        submitBtn.disabled = false
+        return
+      }
+
+      submitBtn.disabled = false
+
+      Toastify({
+        text: 'Message sent successfully',
+        duration: 5000,
+        close: true,
+        gravity: 'top',
+        position: 'center',
+        style: {
+          background: '#32a857'
+        }
+      }).showToast()
+
+      // Clear form on success
+      form.reset()
+    } catch (error) {
+      console.error('Failed to send message')
+    }
+  })
+</script>
