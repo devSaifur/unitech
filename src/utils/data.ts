@@ -1,7 +1,14 @@
-import resultsInHibernation from '../assets/images/results-in-hibernation.jpg'
-
 import plumbing from '../assets/images/plumb.avif'
 import arborists from '../assets/images/arborists.avif'
+import lawn from '../assets/images/lawn.avif'
+import interior from '../assets/images/interior.avif'
+import fixSupport from '../assets/images/fix-support.webp'
+import roofing from '../assets/images/roofing.webp'
+import hvac from '../assets/images/hvac.webp'
+import electrical from '../assets/images/electrical.avif'
+import appliances from '../assets/images/appliances.avif'
+import siding from '../assets/images/siding.webp'
+import drywall from '../assets/images/drywall.webp'
 
 const services = [
   {
@@ -89,7 +96,7 @@ const solutions = [
       'Our expert team provides a comprehensive suite of services, including precision mowing, detailed edging, targeted fertilization, and effective weed control.',
     solution:
       'We are committed to fostering healthy, vibrant lawns through the application of environmentally friendly products and sustainable techniques.',
-    img: resultsInHibernation
+    img: lawn
   },
   {
     title: 'Interior Design and Renovation',
@@ -99,7 +106,7 @@ const solutions = [
       'Our team of experts works closely with you to create a space that reflects your personality and lifestyle.',
     solution:
       'From concept to completion, we handle every aspect of the project with precision and care, ensuring a beautiful and functional result.',
-    img: resultsInHibernation
+    img: interior
   },
   {
     title: 'Fixing & Support',
@@ -109,7 +116,7 @@ const solutions = [
       'From minor repairs to major renovations, we have the expertise and tools to get the job done right.',
     solution:
       'We offer prompt and efficient service to ensure your property is safe and functional.',
-    img: resultsInHibernation
+    img: fixSupport
   },
   {
     title: 'Roofing Services',
@@ -119,7 +126,7 @@ const solutions = [
       'Our team of certified roofers and installers provides efficient and cost-effective solutions to keep your roof looking its best.',
     solution:
       'Committed to the highest standards of safety and workmanship, we meticulously utilize top-tier tools and materials sourced from our comprehensive inventory.',
-    img: resultsInHibernation
+    img: roofing
   },
   {
     title: 'HVAC Services',
@@ -129,7 +136,7 @@ const solutions = [
       'Our experienced technicians install and maintain HVAC systems, ensuring a comfortable and healthy environment for your occupants.',
     solution:
       'We provide regular maintenance and emergency repair services to keep your HVAC system running smoothly year-round.',
-    img: resultsInHibernation
+    img: hvac
   },
   {
     title: 'Electrical Services',
@@ -139,7 +146,7 @@ const solutions = [
       'We have a team of experienced electricians who are ready to provide you with the best services for your electrical needs.',
     solution:
       'Our team is dedicated to providing you with the best service possible, ensuring that your electrical systems are safe and efficient.',
-    img: resultsInHibernation
+    img: electrical
   },
   {
     title: 'Appliances Services',
@@ -149,7 +156,7 @@ const solutions = [
       'Our team of experts are ready to provide you with the best services for your appliances needs, from installation to repair.',
     solution:
       'We are dedicated to providing you with the best service possible, ensuring that your appliances are running smoothly and efficiently.',
-    img: resultsInHibernation
+    img: appliances
   },
   {
     title: 'Siding Services',
@@ -159,7 +166,7 @@ const solutions = [
       'Our team of skilled professionals provides high-quality siding installation and repair services to protect your home from the elements.',
     solution:
       'We use durable materials and advanced techniques to ensure your siding is both functional and aesthetically pleasing.',
-    img: resultsInHibernation
+    img: siding
   },
   {
     title: 'Drywall Services',
@@ -169,7 +176,7 @@ const solutions = [
       'Our team of experts are ready to provide you with the best services for your drywall needs, from installation to repair.',
     solution:
       'We are dedicated to providing you with the best service possible, ensuring that your drywall is installed and repaired to the highest standards.',
-    img: resultsInHibernation
+    img: drywall
   }
 ]
 
