@@ -117,8 +117,6 @@ const { className } = Astro.props
     e.preventDefault()
     const formData = new FormData(form)
 
-    console.log('Form submitted:', Object.fromEntries(formData.entries()))
-
     try {
       const response = await fetch('/api/contact', {
         method: 'POST',

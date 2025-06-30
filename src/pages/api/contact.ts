@@ -11,8 +11,6 @@ import {
   maxLength
 } from 'valibot'
 
-export const prerender = false
-
 const contactSchema = object({
   name: pipe(string(), minLength(1), maxLength(100)),
   email: pipe(string(), email()),
@@ -21,14 +19,12 @@ const contactSchema = object({
 })
 
 export const POST: APIRoute = async ({ request }) => {
-  const data = await request.formData()
-  const body = Object.fromEntries(data)
-
-  console.log('Received contact form data:', body)
-
-  const validData = parse(contactSchema, body)
-
   try {
+    const data = await request.formData()
+    const body = Object.fromEntries(data)
+
+    const validData = parse(contactSchema, body)
+
     await sendDiscordMessage(validData)
     return new Response(JSON.stringify({ success: true }), { status: 200 })
   } catch (err) {

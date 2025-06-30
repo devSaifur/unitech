@@ -1,12 +1,13 @@
-import { y as decryptString, z as createSlotValueFromString, B as isAstroComponentFactory, v as renderComponent, r as renderTemplate, C as ROUTE_TYPE_HEADER, G as REROUTE_DIRECTIVE_HEADER, A as AstroError, H as i18nNoLocaleFoundInPath, J as ResponseSentError, K as bold, O as red, P as yellow, Q as dim, S as blue, T as MiddlewareNoDataOrNextCalled, V as MiddlewareNotAResponse, W as originPathnameSymbol, X as RewriteWithBodyUsed, Y as GetStaticPathsRequired, Z as InvalidGetStaticPathsReturn, _ as InvalidGetStaticPathsEntry, $ as GetStaticPathsExpectedParams, a0 as GetStaticPathsInvalidRouteParam, a1 as PageNumberParamNotFound, D as DEFAULT_404_COMPONENT, a2 as ActionNotFoundError, a3 as NoMatchingStaticPathFound, a4 as PrerenderDynamicEndpointPathCollide, a5 as ReservedSlotName, a6 as renderSlotToString, a7 as renderJSX, a8 as chunkToString, a9 as isRenderInstruction, aa as ForbiddenRewrite, ab as SessionStorageInitError, ac as SessionStorageSaveError, ad as ASTRO_VERSION, ae as CspNotEnabled, af as green, ag as LocalsReassigned, ah as PrerenderClientAddressNotAvailable, ai as clientAddressSymbol, aj as ClientAddressNotAvailable, ak as StaticClientAddressNotAvailable, al as AstroResponseHeadersReassigned, am as responseSentSymbol$1, an as renderPage, ao as REWRITE_DIRECTIVE_HEADER_KEY, ap as REWRITE_DIRECTIVE_HEADER_VALUE, aq as renderEndpoint, ar as LocalsNotAnObject, as as REROUTABLE_STATUS_CODES, at as getAugmentedNamespace } from './astro/server_OJt9805N.mjs';
-import { d as distExports, A as ActionError, a as deserializeActionResult, s as serializeActionResult, b as ACTION_RPC_ROUTE_PATTERN, c as ACTION_QUERY_PARAMS, g as getActionQueryString, D as DEFAULT_404_ROUTE, e as default404Instance, N as NOOP_MIDDLEWARE_FN, u as unflatten$1, f as stringify$2, h as ensure404Route } from './astro-designed-error-pages_Cd0eFYvW.mjs';
+import { z as decryptString, B as createSlotValueFromString, C as isAstroComponentFactory, w as renderComponent, r as renderTemplate, G as ROUTE_TYPE_HEADER, H as REROUTE_DIRECTIVE_HEADER, A as AstroError, J as i18nNoLocaleFoundInPath, K as ResponseSentError, O as bold, P as red, Q as yellow, S as dim, T as blue, V as MiddlewareNoDataOrNextCalled, W as MiddlewareNotAResponse, X as originPathnameSymbol, Y as RewriteWithBodyUsed, Z as GetStaticPathsRequired, _ as InvalidGetStaticPathsReturn, $ as InvalidGetStaticPathsEntry, a0 as GetStaticPathsExpectedParams, a1 as GetStaticPathsInvalidRouteParam, a2 as PageNumberParamNotFound, D as DEFAULT_404_COMPONENT, a3 as ActionNotFoundError, a4 as NoMatchingStaticPathFound, a5 as PrerenderDynamicEndpointPathCollide, a6 as ReservedSlotName, a7 as renderSlotToString, a8 as renderJSX, a9 as chunkToString, aa as isRenderInstruction, ab as ForbiddenRewrite, ac as SessionStorageInitError, ad as SessionStorageSaveError, ae as ASTRO_VERSION, af as CspNotEnabled, ag as green, ah as LocalsReassigned, ai as PrerenderClientAddressNotAvailable, aj as clientAddressSymbol, ak as ClientAddressNotAvailable, al as StaticClientAddressNotAvailable, am as AstroResponseHeadersReassigned, an as responseSentSymbol$1, ao as renderPage, ap as REWRITE_DIRECTIVE_HEADER_KEY, aq as REWRITE_DIRECTIVE_HEADER_VALUE, ar as renderEndpoint, as as LocalsNotAnObject, at as REROUTABLE_STATUS_CODES, au as getAugmentedNamespace } from './astro/server_Cl1byC0r.mjs';
+import { d as distExports, A as ActionError, a as deserializeActionResult, s as serializeActionResult, b as ACTION_RPC_ROUTE_PATTERN, c as ACTION_QUERY_PARAMS, g as getActionQueryString, D as DEFAULT_404_ROUTE, e as default404Instance, N as NOOP_MIDDLEWARE_FN, u as unflatten$1, f as stringify$2, h as ensure404Route } from './astro-designed-error-pages_BOUofk5S.mjs';
 import buffer from 'node:buffer';
 import crypto$1 from 'node:crypto';
 import { Http2ServerResponse } from 'node:http2';
 import { b as appendForwardSlash, j as joinPaths, r as removeTrailingForwardSlash, p as prependForwardSlash, c as trimSlashes, f as fileExtension, s as slash, d as collapseDuplicateTrailingSlashes, h as hasFileExtension } from './index_CCxZAn8N.mjs';
+import { a as setGetEnv } from './runtime_3_A_ItXM.mjs';
 import nodePath, { posix } from 'node:path';
 import require$$0 from 'url';
-import './index_CJnV8ezx.mjs';
+import './index_BPEgLdz9.mjs';
 
 function shouldAppendForwardSlash(trailingSlash, buildFormat) {
   switch (trailingSlash) {
@@ -6753,6 +6754,7 @@ const ASTRO_PATH_PARAM = "x_astro_path";
 const ASTRO_LOCALS_HEADER = "x-astro-locals";
 const ASTRO_MIDDLEWARE_SECRET_HEADER = "x-astro-middleware-secret";
 
+setGetEnv((key) => process.env[key]);
 const createExports = (manifest, { middlewareSecret, skewProtection }) => {
   const app = new NodeApp(manifest);
   const handler = async (req, res) => {

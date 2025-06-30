@@ -1,7 +1,7 @@
-import { j as createAstro, k as createComponent, m as maybeRenderHead, n as addAttribute, q as renderSlot, r as renderTemplate, v as renderComponent, w as renderHead, x as renderScript, u as unescapeHTML } from '../chunks/astro/server_OJt9805N.mjs';
+import { k as createAstro, l as createComponent, n as maybeRenderHead, o as addAttribute, v as renderSlot, r as renderTemplate, w as renderComponent, x as renderHead, y as renderScript, u as unescapeHTML } from '../chunks/astro/server_Cl1byC0r.mjs';
 /* empty css                                 */
 import '../chunks/index_CCxZAn8N.mjs';
-import { $ as $$Image } from '../chunks/_astro_assets_Bfqw4odj.mjs';
+import { $ as $$Image } from '../chunks/_astro_assets_CKxx6rdU.mjs';
 export { renderers } from '../renderers.mjs';
 
 const $$Astro$d = createAstro("https://agency-template.vbartalis.dev");
