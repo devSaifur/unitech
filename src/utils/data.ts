@@ -211,7 +211,7 @@ const faqs = [
     answer: 'Yes, BSS will cover the insurance for the co-workers.'
   },
   {
-    question: 'What social media platforms do yo',
+    question: 'What social media platforms do you use?',
     answer:
       'We work with a wide range of social media platforms, including but not limited to Facebook, Instagram, Twitter, LinkedIn, Pinterest, and TikTok. Our strategies are adaptable to the platforms most relevant to your target audience.'
   },
