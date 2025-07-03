@@ -1,6 +1,6 @@
 import type { APIRoute } from 'astro'
 
-import { sendDiscordMessage } from '../../lib/discord'
+import { sendEmail } from '../../lib/resend'
 import {
   object,
   string,
@@ -25,7 +25,7 @@ export const POST: APIRoute = async ({ request }) => {
 
     const validData = parse(contactSchema, body)
 
-    await sendDiscordMessage(validData)
+    await sendEmail(validData)
     return new Response(JSON.stringify({ success: true }), { status: 200 })
   } catch (err) {
     console.error(err)
