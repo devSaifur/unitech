@@ -184,7 +184,7 @@ const faqs = [
   {
     question: 'How does Unitech Builder pay?',
     answer:
-      'BSS pays on a weekly basis through direct deposit from Bank to Bank, Zelle, or CashApp.'
+      'Unitech pays on a weekly basis through direct deposit from Bank to Bank, Zelle, or CashApp.'
   },
   {
     question: 'Does Unitech Builder pay gas money?',
@@ -208,7 +208,7 @@ const faqs = [
   },
   {
     question: 'Does Unitech Builder cover insurance?',
-    answer: 'Yes, BSS will cover the insurance for the co-workers.'
+    answer: 'Yes, Unitech Builder will cover the insurance for the co-workers.'
   },
   {
     question: 'What social media platforms do you use?',
